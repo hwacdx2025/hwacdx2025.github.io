@@ -13,9 +13,27 @@
       document.write(new Date().toLocaleString());
     </script>
  
-    <p>战略不是研究我们未来做什么，而是研究现在做什么才有未来。</p>
+    <!-- <p>战略不是研究我们未来做什么，而是研究现在做什么才有未来。</p> -->
 
-    <img src="images/jeektime.jpg" alt="test image" width="400px">
+    <!-- <img src="images/jeektime.jpg" alt="test image" width="400px"> -->
+
+   <!-- 加载本地视频文件，在 css 中设置视频窗口大小、居中显示 -->
+   <video src="videos/test.mp4" controls ></video> 
+
+    <!-- 切换图片按钮 -->
+     <button onclick="changeImage()">Change Image</button>
+     <script>
+       function changeImage() {
+        // 获取 images 目录下所有图片
+        var images = document.getElementsByTagName("img"); // 获取所有图片
+        console.log(images.length);
+
+        var currentImage = images[0]; 
+        // 更换 img dom 元素的 src 属性
+        currentImage.src = "images/firefox2.png";
+ 
+       }
+     </script>  
 
     <!-- 浏览器会按照代码在文件中的顺序进行读取。
       如果 JavaScript 先加载，并期望操纵还未加载的 HTML，可能会出现问题。将 JavaScript 放在 HTML 页面的底部附近是一种解决方案 -->

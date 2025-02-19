@@ -39,3 +39,10 @@
     display: block;
     margin: 0 auto;
   }
+
+  video {
+    display: block;
+    margin: 0 auto;
+    padding: 20px;
+    width: 70%;
+  }
